@@ -11,10 +11,11 @@ textoEntrada = document.getElementById('campo-entrada');
 
 function criptografa() {
   var textoDigitado = textoEntrada.value;
-
   // for (var letra = 0; letra < textoDigitado.length; letra++) {
   //   console.log(textoDigitado[letra]);
   // }
+
+  var chaves = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "uber"]];
 
   for (var letra = 0; letra < textoDigitado.length; letra++) {
     if (textoDigitado[letra] == "s") {
