@@ -1,35 +1,31 @@
-// A letra "e" é convertida para "enter"
-// A letra "i" é convertida para "imes"
-// A letra "a" é convertida para "ai"
-// A letra "o" é convertida para "ober"
-// A letra "u" é convertida para "ufat"
+const textArea = document.querySelector("#campo-entrada");
+const mensagem = document.querySelector("#campo-saida");
 
 
+function btnEncriptar() {
+  const textoEncriptado = criptografar(textArea.value);
+  mensagem.value = textoEncriptado;
+  textArea.value = "";
+}
 
-var textoEntrada = [];
-textoEntrada = document.getElementById('campo-entrada');
 
-function criptografa() {
-  var textoDigitado = textoEntrada.value;
-  // for (var letra = 0; letra < textoDigitado.length; letra++) {
-  //   console.log(textoDigitado[letra]);
-  // }
+function criptografar(textoDigitado) {
 
-  var chaves = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "uber"]];
+  let chaves = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "uber"],
+  ];
+  textoDigitado = textoDigitado.toLowerCase();
 
-  for (var letra = 0; letra < textoDigitado.length; letra++) {
-    if (textoDigitado[letra] == "s") {
-      textoDigitado[letra] += "ai";
-      console.log(textoDigitado[letra]);
+  for (let i = 0; i < chaves.length; i++) {
+    if(textoDigitado.includes(chaves[i][0])) {
+      textoDigitado = textoDigitado.replaceAll(chaves[i][0], chaves[i][1]);
     }
   }
-
-  // document.getElementById('campo-saida').innerText = textoDigitado;
-  alert(textoDigitado.length);
-
-
-
-
+  return textoDigitado;
 
 
 }
