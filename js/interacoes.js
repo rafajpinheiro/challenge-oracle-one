@@ -9,7 +9,7 @@ function btnEncriptar() {
 }
 
 
-function criptografar(textoDigitado) {
+function criptografar(textoCripto) {
 
   let chaves = [
     ["e", "enter"],
@@ -18,14 +18,41 @@ function criptografar(textoDigitado) {
     ["o", "ober"],
     ["u", "uber"],
   ];
-  textoDigitado = textoDigitado.toLowerCase();
+  textoCripto = textoCripto.toLowerCase();
 
   for (let i = 0; i < chaves.length; i++) {
-    if(textoDigitado.includes(chaves[i][0])) {
-      textoDigitado = textoDigitado.replaceAll(chaves[i][0], chaves[i][1]);
+    if(textoCripto.includes(chaves[i][0])) {
+      textoCripto = textoCripto.replaceAll(chaves[i][0], chaves[i][1]);
     }
   }
-  return textoDigitado;
+  return textoCripto;
 
+}
+
+
+function btnDesencriptar() {
+  const textoDesencriptado = descriptografar(textArea.value);
+  mensagem.value = textoDesencriptado;
+  textArea.value = "";
+}
+
+
+function descriptografar(textoDescripto) {
+
+  let chaves = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "uber"],
+  ];
+  textoDescripto = textoDescripto.toLowerCase();
+
+  for (let i = 0; i < chaves.length; i++) {
+    if(textoDescripto.includes(chaves[i][1])) {
+      textoDescripto = textoDescripto.replaceAll(chaves[i][1], chaves[i][0]);
+    }
+  }
+  return textoDescripto;
 
 }
