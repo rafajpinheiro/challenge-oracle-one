@@ -1,0 +1,70 @@
+/* TABLETS */
+@media screen and (max-width: 768px) {
+
+main{
+  background-color: red;
+  width: 100vh;
+  flex-direction:column;
+}
+
+.entrada{
+  width: 100vh;
+}
+
+.saida{
+  width: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* CELULARES */
+@media screen and (max-width: 480px) {
+
+  main{
+    background-color: yellow;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
