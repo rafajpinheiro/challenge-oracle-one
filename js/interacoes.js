@@ -56,3 +56,10 @@ function descriptografar(textoDescripto) {
   return textoDescripto;
 
 }
+
+
+  document.getElementById("copiar").addEventListener('click', clipboardCopy);
+  async function clipboardCopy() {
+    let text = document.querySelector("#campo-saida").value;
+    await navigator.clipboard.writeText(text);
+  }

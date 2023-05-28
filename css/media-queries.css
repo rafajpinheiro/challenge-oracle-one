@@ -1,39 +1,100 @@
 /* TABLETS */
 @media screen and (max-width: 768px) {
 
-main{
+
+main {
   background-color: red;
-  width: 100vh;
+  width: 100%;
+  height: 100vh;
   flex-direction:column;
 }
 
-.entrada{
-  width: 100vh;
+.entrada {
+  width: 90%;
+  height: 70%;
+  margin: 5% auto 0 auto;
+ 
 }
 
-.saida{
-  width: 100vh;
+.entrada__logo {
+  height: 8%;
+  padding-left: 0;
 }
 
+.entrada__logo img {
+}
 
+.entrada__main {
+  height: 74%;
+}
 
+.entrada__campo-texto {
+  width: 100%;
+  height: 80%;
+  margin: 10% 0;
+  font-size: 28px;
+  line-height: 36px;
+}
 
+.entrada__campo-texto::placeholder {
 
+}
 
+.entrada__campo-texto:hover{
 
+}
 
+.entrada__opcoes {
+  height: 18%;
+  padding-left: 0;
+  text-align: center;
+}
 
+.entrada__opcoes p {
+  font-size: 20px;
 
+}
 
+.entrada__opcoes img {
 
+}
 
+.entrada__botao {
+  width: 45%;
+  height: 45%;
+}
 
+#descripto {
 
+}
 
+#copiar {
+  width: 90%;
+  height: 20%;
+  margin:3% auto 0 auto;
+}
 
+.saida {
+  width: 90%;
+  /* height: 20%; */
+  min-height: 20%;
+  height: auto;
+  margin: 0 auto 5% auto;
+  border-radius: 30px;
+}
 
+.saida__campo-texto {
+  width: 90%;
+  min-height: 40%;
+  height: auto;
+  margin: 5% auto 0 auto;
+  font-size: 28px;
+  line-height: 36px;
+}
 
-
+.saida__campo-texto::placeholder {
+  padding-top: 0;
+}
 
 
 }
@@ -43,6 +104,74 @@ main{
 
   main{
     background-color: yellow;
+  }
+
+  .entrada__logo {
+    height: 8%;
+    padding-left: 0;
+  }
+  
+  .entrada__logo img {
+  }
+  
+  .entrada__main {
+    height: 65%;
+  }
+  
+  .entrada__campo-texto {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .entrada__opcoes {
+    height: 27%;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .entrada__opcoes p {
+    font-size: 16px;
+  
+  }
+  
+  .entrada__opcoes img {
+  
+  }
+  
+  .entrada__botao {
+    width: 100%;
+    height: 35%;
+  }
+  
+  #descripto {
+    margin-left: 0;
+  }
+  
+  #copiar {
+    width: 90%;
+    height: 20%;
+    margin:5% auto 0 auto;
+  }
+  
+  .saida {
+    width: 90%;
+    height: 20%;
+    margin: 0 auto 5% auto;
+    border-radius: 30px;
+    border-radius: 15px;
+  }
+  
+  .saida__campo-texto {
+    width: 90%;
+    min-height: 40%;
+    height: auto;
+    margin: 5% auto 0 auto;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .saida__campo-texto::placeholder {
+    padding-top: 0;
   }
   
   
